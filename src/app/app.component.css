@@ -1,0 +1,110 @@
+.example-icon {
+    padding: 0 28px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+  .example-form {
+    min-width: 50px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-mid-width {
+    width: 50%;
+    text-align: left;
+  }
+
+  .format-text-right{
+    text-align: right;
+    padding-left: 350px;
+  }
+
+  .align-center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.align-button-right{
+    /* left: 500px; */
+    background-color:gold;
+    color: white;
+}
+
+.text-area{
+  width: 350px;
+  font-size: 11px;
+  /* line-height: 0.7; */
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -0px;
+}
+
+.text-color{
+  color: darkorchid;
+}
+
+.font-title{
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.img-background{
+  background-image: url("C:\Users\Quaresma\Desktop\Faculdade\desafioTO\desafioTO\projetoTO\src\assets\img\HEADER.png");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.middle{
+  left:600px;
+  top:600px;
+  margin-left:-110px;
+  margin-top:-40px;
+}
+
+.label{
+  color: #cccccc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.img-find{
+    height: 150px;
+    width: 150px;
+    bottom: 50%;
+    top: 50%;
+    left: 45%;
+    right: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img{
+  opacity: 0.0;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  background-image: url("C:\Users\Quaresma\Desktop\Faculdade\desafioTO\desafioTO\projetoTO\src\assets\img\find.png");
+  height: 150px;
+  width: 150px;
+  bottom: 50%;
+  top: 50%;
+  left: 45%;
+  right: 55%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

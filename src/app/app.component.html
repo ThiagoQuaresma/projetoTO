@@ -1,0 +1,72 @@
+
+<div class="img-background">
+
+
+<div class="input-group example-mid-width mb-3 align-center">
+    <input type="text" placeholder="Pesquisar" class="form-control" aria-label="Recipiente para nickname"
+    aria-describedby="basic-addon2" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+    <div class="input-group-append">
+      <button mdbBtn color="yellow" size="md" class="m-0 px-5 py-2" type="button" (click)="test.toggle()" mdbWavesEffect><i class="fa fa-search"></i></button>
+    </div>
+</div>
+
+<div class="" mdbCollapse #test="bs-collapse">
+
+    <mat-accordion class="middle">
+      <br><br><br><br><br><br>
+      <p class="example-mid-width align-center label">Resultado da busca</p>
+      <mat-expansion-panel class="example-mid-width align-center" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+        target="panel1">
+        
+        <mat-expansion-panel-header id="panel1">
+          <mat-panel-title>
+            <p class="font-title">GOLDEN TULIP</p>
+          </mat-panel-title>
+          <mat-panel-description class="format-text-right text-color">
+            {{panelOpenState ? 'Ocultar detalhe da ação' : 'Ver detalhe da ação'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-lg-10">
+            <p class="text-area">
+              Golden Tulip é uma cadeia originalmente holandesa de hotéis e resorts.
+              Em todo o mundo existem mais de 240 hotéis Golden Tulip espalhados por 45 países.
+            </p>
+          </div>
+          <div class="col-lg-02">
+            <button mat-button class="align-button-right" mat-raised-button (click)="openDialog()">VER MAIS</button>
+          </div>
+        </div>
+      </mat-expansion-panel>
+      <p></p>
+      <mat-expansion-panel class="example-mid-width align-center" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+        target="panel2">
+        <mat-expansion-panel-header id="panel2">
+          <mat-panel-title>
+            <p class="font-title">GOLDEN TULIP</p>
+          </mat-panel-title>
+          <mat-panel-description class="format-text-right text-color">
+            {{panelOpenState ? 'Ocultar detalhe da ação' : 'Ver detalhe da ação'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-lg-10">
+            <p class="text-area">
+              Golden Tulip é uma cadeia originalmente holandesa de hotéis e resorts.
+              Em todo o mundo existem mais de 240 hotéis Golden Tulip espalhados por 45 países.
+            </p>
+          </div>
+          <div class="col-lg-02">
+            <button mat-button class="align-button-right" mat-raised-button (click)="openDialog()">VER MAIS</button>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+ 
+</div>
+</div>
